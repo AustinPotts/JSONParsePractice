@@ -11,6 +11,9 @@
 		3D97CBF32321D2BD00739215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D97CBF12321D2BD00739215 /* Main.storyboard */; };
 		3D97CBF52321D2BE00739215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D97CBF42321D2BE00739215 /* Assets.xcassets */; };
 		3D97CBF82321D2BE00739215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D97CBF62321D2BE00739215 /* LaunchScreen.storyboard */; };
+		451F6A4B2321DE1A00B19E07 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F6A4A2321DE1A00B19E07 /* UsersTableViewController.swift */; };
+		451F6A4D2321DE3300B19E07 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F6A4C2321DE3300B19E07 /* UserDetailViewController.swift */; };
+		451F6A502321DF1800B19E07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F6A4F2321DF1800B19E07 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		3D97CBF42321D2BE00739215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D97CBF72321D2BE00739215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D97CBF92321D2BE00739215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451F6A4A2321DE1A00B19E07 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		451F6A4C2321DE3300B19E07 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		451F6A4F2321DF1800B19E07 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 		3D97CBE12321D2BC00739215 = {
 			isa = PBXGroup;
 			children = (
+				451F6A512321DF6400B19E07 /* Model */,
+				451F6A4E2321DE8700B19E07 /* ViewControllers */,
 				3D97CBEC2321D2BD00739215 /* RandomUsers */,
 				3D97CBEB2321D2BD00739215 /* Products */,
 			);
@@ -75,6 +83,23 @@
 				3D97CBF62321D2BE00739215 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		451F6A4E2321DE8700B19E07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				451F6A4A2321DE1A00B19E07 /* UsersTableViewController.swift */,
+				451F6A4C2321DE3300B19E07 /* UserDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		451F6A512321DF6400B19E07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				451F6A4F2321DF1800B19E07 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451F6A502321DF1800B19E07 /* User.swift in Sources */,
+				451F6A4B2321DE1A00B19E07 /* UsersTableViewController.swift in Sources */,
 				3D97CBEE2321D2BD00739215 /* AppDelegate.swift in Sources */,
+				451F6A4D2321DE3300B19E07 /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3F959XXFV;
 				INFOPLIST_FILE = "$(SRCROOT)/RandomUsers/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3F959XXFV;
 				INFOPLIST_FILE = "$(SRCROOT)/RandomUsers/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
