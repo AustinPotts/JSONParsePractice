@@ -92,8 +92,15 @@ class UsersTableViewController: UITableViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
+        if segue.identifier == "UserDetailSegue" {
+            guard let userDetailVc = segue.destination as? UserDetailViewController else {return}
+            guard let indexPath = tableView.indexPathForSelectedRow else {return}
+            let user = apiController.user[indexPath.row]
+            userDetailVc.user = user
+        }
     }
+    
+    
     
 
 }

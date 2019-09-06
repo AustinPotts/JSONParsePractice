@@ -10,12 +10,25 @@ import UIKit
 
 class UserDetailViewController: UIViewController {
 
+    var user: User? {
+        didSet{
+            updateViews()
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       updateViews()
     }
     
+    
+    func updateViews() {
+        guard isViewLoaded,
+            let user = user else{return}
+        title = user.name.first.capitalized
+    }
 
     /*
     // MARK: - Navigation
