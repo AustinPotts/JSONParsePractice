@@ -58,10 +58,70 @@
                     <view key="view" contentMode="scaleToFill" id="hYw-4X-dPR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="TEe-UZ-mpT">
+                                <rect key="frame" x="20" y="108" width="374" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQo-l1-1hr">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cox-BL-L3z">
+                                        <rect key="frame" x="333" y="0.0" width="41" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="nus-eb-08p">
+                                <rect key="frame" x="20" y="175" width="374" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-oF-CsZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wN8-2E-tvm">
+                                        <rect key="frame" x="312" y="0.0" width="62" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ufq-L5-l4R">
+                                <rect key="frame" x="20" y="218" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="LaW-v5-CQ9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AFX-ZD-LsS" firstAttribute="trailing" secondItem="TEe-UZ-mpT" secondAttribute="trailing" constant="20" id="4H6-Oh-WzB"/>
+                            <constraint firstItem="nus-eb-08p" firstAttribute="top" secondItem="TEe-UZ-mpT" secondAttribute="bottom" constant="46.5" id="CaL-M2-VM2"/>
+                            <constraint firstItem="AFX-ZD-LsS" firstAttribute="trailing" secondItem="Ufq-L5-l4R" secondAttribute="trailing" constant="244" id="SnR-2Y-j1A"/>
+                            <constraint firstItem="nus-eb-08p" firstAttribute="leading" secondItem="AFX-ZD-LsS" secondAttribute="leading" constant="20" id="aKY-nV-ouz"/>
+                            <constraint firstItem="AFX-ZD-LsS" firstAttribute="trailing" secondItem="nus-eb-08p" secondAttribute="trailing" constant="20" id="adg-6R-zem"/>
+                            <constraint firstItem="Ufq-L5-l4R" firstAttribute="leading" secondItem="AFX-ZD-LsS" secondAttribute="leading" constant="20" id="bCX-qr-Myw"/>
+                            <constraint firstItem="TEe-UZ-mpT" firstAttribute="leading" secondItem="AFX-ZD-LsS" secondAttribute="leading" constant="20" id="clS-hG-IHQ"/>
+                            <constraint firstItem="AFX-ZD-LsS" firstAttribute="bottom" secondItem="Ufq-L5-l4R" secondAttribute="bottom" constant="494" id="i7O-vg-D7m"/>
+                            <constraint firstItem="nus-eb-08p" firstAttribute="top" secondItem="hYw-4X-dPR" secondAttribute="top" constant="175" id="i7k-bz-TOo"/>
+                            <constraint firstItem="Ufq-L5-l4R" firstAttribute="top" secondItem="nus-eb-08p" secondAttribute="bottom" constant="22.5" id="jLr-NX-sDT"/>
+                            <constraint firstItem="TEe-UZ-mpT" firstAttribute="top" secondItem="AFX-ZD-LsS" secondAttribute="top" constant="20" id="o8L-AZ-mKj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AFX-ZD-LsS"/>
                     </view>
                     <navigationItem key="navigationItem" title="User" id="GVJ-95-vb9"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="cox-BL-L3z" id="jYe-U6-QIB"/>
+                        <outlet property="imageView" destination="Ufq-L5-l4R" id="1GY-5W-Vuq"/>
+                        <outlet property="phoneLabel" destination="wN8-2E-tvm" id="qCt-My-sID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaA-vn-PW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
